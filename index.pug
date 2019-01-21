@@ -10,10 +10,15 @@ body
 		p Instruction text goes here
 		
 
-	each sentence, sindex in examples
+	each sentence, sindex in sentences
 		.ui.raised.very.padded.text.container.segment
 			h2 Sentence #{sindex+1}
-			each word, windex in sentence
-				.wordlist
-					span.wordindex=windex+1
-					span.word=word 
+			.ui.form
+				.grouped.fields
+					label=sentence.whole
+					each word, windex in sentence.words
+						- const text = `s${sindex}-w${windex}`
+						.field
+							.ui.checkbox
+								input(id=text, type='checkbox')
+								label(for=text) #{word}

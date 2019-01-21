@@ -1,6 +1,12 @@
 {
-  "examples": [
-    ["This", "is", "a", "very", "nice,", "sweet,", "and", "polite", "comment."],
-    ["This", "sentence", "is", "horribly", "nasty", "and", "very", "obscene"]
+  "sentences": [
+    {
+      "whole": "This is a very nice, sweet, and polite comment.",
+      "words": ["This", "is", "a", "very", "nice,", "sweet,", "and", "polite", "comment."]
+    },
+    {
+      "whole": "This sentence is horribly nasty and very obscene.",
+      "words": ["This", "sentence", "is", "horribly", "nasty", "and", "very", "obscene"]
+    }
   ]
 }
