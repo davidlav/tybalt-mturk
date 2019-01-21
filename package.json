@@ -1,0 +1,7 @@
+{
+  "name": "tybalt-mturk",
+  "scripts": {
+    "start": "pug -w -P -O text.json index.pug"
+  },
+  "author": "David LaVergne"
+}

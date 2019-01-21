@@ -1,0 +1,6 @@
+{
+  "examples": [
+    ["This", "is", "a", "very", "nice,", "sweet,", "and", "polite", "comment."],
+    ["This", "sentence", "is", "horribly", "nasty", "and", "very", "obscene"]
+  ]
+}

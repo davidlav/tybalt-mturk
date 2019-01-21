@@ -1,0 +1,19 @@
+head
+	link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.1/dist/semantic.min.css")
+	style
+		include style.css
+
+body
+
+	.ui.raised.very.padded.text.container.segment
+		h2.ui.header Instructions
+		p Instruction text goes here
+		
+
+	each sentence, sindex in examples
+		.ui.raised.very.padded.text.container.segment
+			h2 Sentence #{sindex+1}
+			each word, windex in sentence
+				.wordlist
+					span.wordindex=windex+1
+					span.word=word 

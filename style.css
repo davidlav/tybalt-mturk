@@ -1,0 +1,9 @@
+body {
+  margin-top: 15px;
+}
+
+.wordindex {
+  display: inline-block;
+  font-weight: bold;
+  min-width: 30px;
+}
