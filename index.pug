@@ -7,20 +7,23 @@ body
 
 	.ui.raised.very.padded.text.container.segment
 		h2.ui.header Instructions
-		p Instruction text goes here
+		p Instruction text goes here!
 		
+	.ui.raised.very.padded.text.container.segments
+		.ui.padded.center.aligned.text.secondary.segment
+			h1.ui.header Tasks
 
-	each sentence, sindex in sentences
-		.ui.raised.very.padded.text.container.segment
-			h3 Sentence #{sindex+1}
-			.ui.form
-				.grouped.fields
-					.ui.message=sentence
-					label Please select the offending words:
-					- const splitSentence = sentence.split(' ')
-					each word, windex in splitSentence
-						- const text = `s${sindex}-w${windex}`
-						.field
-							.ui.checkbox
-								input(id=text, type='checkbox')
-								label(for=text) #{word}
+		each sentence, sindex in sentences
+			.ui.very.padded.text.segment
+				h3 Sentence #{sindex+1}
+				.ui.form
+					.grouped.fields
+						.ui.message=sentence
+						label Please select the offending words:
+						- const splitSentence = sentence.split(' ')
+						each word, windex in splitSentence
+							- const text = `s${sindex}-w${windex}`
+							.field
+								.ui.checkbox
+									input(id=text, type='checkbox')
+									label(for=text) #{word}
