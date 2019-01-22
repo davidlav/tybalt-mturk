@@ -1,5 +1,5 @@
-body {
-  margin-top: 15px;
+.container {
+  margin: 20px;
 }
 
 .ui.checkbox label {
