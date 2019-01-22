@@ -1,3 +1,8 @@
 body {
   margin-top: 15px;
 }
+
+.ui.checkbox label {
+  user-select: none;
+  cursor: pointer;
+}
