@@ -12,11 +12,13 @@ body
 
 	each sentence, sindex in sentences
 		.ui.raised.very.padded.text.container.segment
-			h2 Sentence #{sindex+1}
+			h3 Sentence #{sindex+1}
 			.ui.form
 				.grouped.fields
-					label=sentence.whole
-					each word, windex in sentence.words
+					.ui.message=sentence
+					label Please select the offending words:
+					- const splitSentence = sentence.split(' ')
+					each word, windex in splitSentence
 						- const text = `s${sindex}-w${windex}`
 						.field
 							.ui.checkbox
