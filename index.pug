@@ -10,27 +10,27 @@ body
 			.ui.center.aligned.padded.secondary.segment
 				h1.ui.header Conscent
 			.ui.very.padded.segment
-				p IRB informed conscent text goes here
+				p IRB informed conscent text
 			
 
 		.ui.raised.segments
 			.ui.center.aligned.padded.secondary.segment
 				h1.ui.header English Language Test
 			.ui.very.padded.segment
-				p Language proficiency test goes here
+				p Language proficiency test
 			
 
 		.ui.raised.segments
 			.ui.center.aligned.padded.secondary.segment
 				h1.ui.header Concepts Quiz
 			.ui.very.padded.segment
-				p Learn about toxicity/dehumanizing language/etc.
+				p Teach participants about toxicity/dehumanizing language/etc.
 			
 		.ui.raised.segments
 			.ui.center.aligned.padded.secondary.segment
 				h1.ui.header Instructions
 			.ui.very.padded.segment
-				p Instruction text goes here
+				p Task instruction text
 
 		.ui.raised.segments
 			.ui.center.aligned.padded.secondary.segment
@@ -42,7 +42,7 @@ body
 					.ui.form
 						.grouped.fields
 							.ui.message=sentence
-							label Please select the offending words:
+							label Please select any offending words:
 							- const splitSentence = sentence.split(' ')
 							each word, windex in splitSentence
 								- const text = `s${sindex}-w${windex}`
